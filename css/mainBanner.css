@@ -1,0 +1,34 @@
+.mainBanner {
+    background-image: url("../images/banner1.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media(max-width:1199px) {
+    .mainBanner {
+        justify-content: center;
+    }
+}
+
+.textBox {
+    background: #6c08ab38;
+    text-align: center;
+    padding: 30px 60px;
+    margin-bottom: 4%;
+}
+
+@media(max-width:1199px) {
+    .textBox {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+.textBox__paragraph {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 30px;
+}
