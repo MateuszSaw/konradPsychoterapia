@@ -14,6 +14,8 @@
     }
 }
 
+
+
 .textBox {
     background: #6c08ab38;
     text-align: center;
@@ -28,7 +30,13 @@
     }
 }
 
+
 .textBox__paragraph {
     font-family: 'Sansita Swashed', cursive;
     font-size: 30px;
+}
+@media(max-width:991px) {
+    .textBox__paragraph {
+        font-size: 15px;
+    }
 }

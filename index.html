@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/mainBanner.css">
     <link rel="stylesheet" href="css/mainNavigation.css">
+    <script defer src="js/navigation.js"></script>
 </head>
 
 <body>
@@ -20,11 +21,11 @@
         <div class="mainNavigation__inner">
             <div class="mainNavigation__logo">
                 <a href="#" class="mainNavigation__logoLink">
-                    <img class="mainNavigation__logoImage" src="../images/projekt logo.png" alt="logo">
-                    Hipnoterapia Konrad Grześkiewicz
+                    <img class="mainNavigation__logoImage" src="../images/logo.png" alt="logo">
+                   <p class="mainNavigation__paragraph" >Hipnoterapia Konrad Grześkiewicz</p>
                 </a>
             </div>
-            <ul class="mainNavigation__menu">
+            <ul class="mainNavigation__menu js-mainNavigation__menu">
                 <li class="mainNavigation__menuItem">
                     <a href="#" class="mainNavigation__link">
                         O mnie
@@ -45,8 +46,10 @@
                         <img src="../images/facebook.svg" alt="Facebook" class="mainNavigation__socialIcon">
                     </a>
                 </li>
-
             </ul>
+            <button class="navigation__mobile-button js-navigation__mobile-button">
+                <img src="../images/navigation.svg" alt="otwórz / zamknij nawigacje" class="navigation__mobile-button-image">
+            </button>
         </div>
 
 

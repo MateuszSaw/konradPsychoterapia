@@ -12,11 +12,11 @@
     margin-right: 20px;
 }
 
-.mainNavigation__socialIcon{
+.mainNavigation__socialIcon {
     width: 25px;
 }
 
-.mainNavigation__inner{
+.mainNavigation__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +24,7 @@
     margin: 0 auto;
 }
 
-.mainNavigation__logoLink{
+.mainNavigation__logoLink {
     text-decoration: none;
     color: white;
     display: flex;
@@ -32,27 +32,62 @@
     font-size: 20px;
 }
 
+@media(max-width: 991px) {
+    .mainNavigation__paragraph {
+        display: none;
+    }
+}
 
 .mainNavigation__menu {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
+    align-items: center;
+    transition: 0.5s;
+    transition-property: opacity, transform;
 }
 
-.mainNavigation__menuItem{
-    margin-left: 60px;
-    padding: 5px 0;
-}
-
-@media(max-width: 1199px){
-    .mainNavigation__menuItem{
-        margin-left: 30px;
+@media(max-width: 991px) {
+    .mainNavigation__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        background: #6c08ab78;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%);
     }
 }
 
-.mainNavigation__menuItem:hover{
-    border-bottom: 2px solid white;
+@media(max-width: 991px) {
+    .mainNavigation__menu--open {
+        opacity: 1;
+        pointer-events: unset;
+        transform: unset;
+    }
+}
+
+.mainNavigation__menuItem {
+    margin-left: 40px;
+}
+
+@media(max-width: 1199px) {
+    .mainNavigation__menuItem {
+        margin-left: 30px;
+    }
+}
+@media(max-width: 991px) {
+    .mainNavigation__menuItem {
+        margin-left: 0;
+    }
 }
 
 .mainNavigation__link {
@@ -60,4 +95,43 @@
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 5px 0;
+}
+
+@media(max-width: 991px) {
+    .mainNavigation__link {
+        font-size: 22px;
+    }
+}
+
+.mainNavigation__link:hover {
+    border-bottom: 2px solid #01B7B1;
+}
+
+@media(max-width: 991px) {
+    .mainNavigation__link:hover {
+        border-bottom: unset;
+    }
+}
+
+.navigation__mobile-button {
+    display: none;
+}
+
+@media(max-width: 991px) {
+    .navigation__mobile-button {
+        display: unset;
+        background: none;
+        border: none;
+        padding: 0;
+        fill: white;
+        margin: 10px;
+    }
+}
+
+@media(max-width: 991px) {
+    .navigation__mobile-button-image {
+        width: 50px;
+        display: block;
+    }
 }
