@@ -1,0 +1,36 @@
+.aboutMe {
+background-image: url("../images/whitePurpleBackground.jpg");
+height: 100vh;
+background-position: center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.aboutMeWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe__text{
+    /* float: right; */
+    padding-left: 100px;
+}
+
+.aboutMe__header {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.aboutMe__paragraph {
+    line-height: 2;
+    font-size: 20px;
+}
+
+.aboutMe__image{
+    max-width: 30%;
+    float: left;
+}
+
